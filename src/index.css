@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* .credit-card-front {
+  background-image: url("./assets/bg-card-front.png");
+  width: 447px;
+  height: 245px;
+}
+
+.credit-card-back {
+  background-image: url("./assets/bg-card-back.png");
+} */
+
+.background-image-fixed {
+  background-repeat: no-repeat;
+  @media (min-width: 375px) {
+    background-image: url("./assets/bg-main-desktop.png");
+    height: 100vh;
+    width: 100%;
+  }
+  @media (max-width: 375px) {
+    background-image: url("./assets/bg-main-mobile.png");
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
